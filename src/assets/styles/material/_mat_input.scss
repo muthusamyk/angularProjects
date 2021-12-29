@@ -1,0 +1,91 @@
+@import '../includes';
+
+/* Mat form field Input text box style overwrite here */
+
+mat-form-field.mat-form-field {
+  &.full-width {
+    width: 100%;
+  }
+
+  &.mat-form-field-appearance-outline {
+    .mat-form-field-wrapper {
+      margin: 0;
+      padding-bottom: 0;
+
+      .mat-form-field-flex {
+        margin-top: 0;
+        padding: 0;
+
+        .mat-form-field-outline {
+          top: 0;
+          color: map-get($angular-grey, 500);
+
+          .mat-form-field-outline-start {
+            border-radius: 2px 0 0 2px;
+          }
+
+          .mat-form-field-outline-end {
+            border-radius: 0 2px 2px 0;
+          }
+
+          .mat-form-field-outline-start,
+          .mat-form-field-outline-end,
+          .mat-form-field-outline-gap {
+            border-width: 1px;
+          }
+        }
+
+        .mat-form-field-infix {
+          border-top: 0;
+          padding: 10px 16px;
+
+          .mat-input-element {
+            @include font(14px, 20px, 500, $angular-grey-primary);
+            margin-top: 0;
+
+            &::placeholder {
+              @include font(14px, 20px, 400, $angular-grey-hint);
+            }
+          }
+
+          .mat-form-field-label-wrapper {
+            top: 0;
+            padding-top: 0;
+          }
+        }
+      }
+
+      .mat-form-field-subscript-wrapper {
+        @include font(12px, 16px, 400, $angular-red-color);
+        letter-spacing: normal;
+        padding: 0;
+        margin: 0.25rem 0 0 0;
+        top: 0;
+        position: relative;
+      }
+    }
+
+    &:focus, &.mat-focused {
+      .mat-form-field-flex .mat-form-field-outline {
+        color: $angular-primary-color;
+      }
+    }
+
+    &.mat-form-field-invalid .mat-form-field-flex .mat-form-field-outline {
+      color: $angular-red-color;
+    }
+  }
+
+  .mat-form-field-label,
+  .mat-focused .mat-form-field-label {
+    @include font(14px, 20px, 400, $angular-grey-hint);
+    letter-spacing: normal;
+  }
+}
+
+.form-label {
+  display: table;
+  @include font(13px, 22px, 400, $angular-grey-secondary);
+  letter-spacing: 0.19px;
+  margin: 0 0 4px 0;
+}

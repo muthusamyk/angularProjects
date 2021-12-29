@@ -1,0 +1,51 @@
+@import '../includes';
+
+/* Material Chip Lists style overwrite here */
+
+.mat-chip-list {
+  .mat-chip {
+    @include font(13px, 18px, 400, $angular-grey-secondary);
+  }
+
+  &.light-bg-chip .mat-chip {
+
+    .mat-chip-remove.mat-icon {
+      opacity: 1;
+    }
+
+    &.mat-basic {
+      background-color: map-get($angular-grey, 600);
+      color: $angular-grey-secondary;
+
+      .mat-chip-remove.mat-icon {
+        @include icon(18px, $angular-grey-tertiary);
+      }
+    }
+
+    &.mat-primary {
+      background-color: map-get($angular-primary, 600);
+      color: $angular-primary-color !important;
+
+      .mat-chip-remove.mat-icon {
+        @include icon(18px, $angular-primary-color);
+      }
+    }
+
+    &.mat-accent {
+      background-color: map-get($angular-secondary, 600);
+      color: $angular-secondary-color !important;
+
+      .mat-chip-remove.mat-icon {
+        @include icon(18px, $angular-secondary-color);
+      }
+    }
+
+    &.mat-warn {
+      color: $angular-red-color !important;
+
+      .mat-chip-remove.mat-icon {
+        @include icon(18px, map-get($angular-red, 200));
+      }
+    }
+  }
+}

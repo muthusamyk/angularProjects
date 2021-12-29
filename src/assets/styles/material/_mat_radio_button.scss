@@ -1,0 +1,40 @@
+@import '../includes';
+
+/* Material Radio Button style overwrite here */
+
+.mat-radio-group {
+  .mat-radio-button {
+    .mat-radio-label {
+      margin: 0;
+
+      .mat-radio-container {
+        @include size(16px);
+
+        .mat-radio-outer-circle {
+          border-width: 1px;
+          @include size(16px);
+        }
+
+        .mat-radio-inner-circle {
+          @include size(16px);
+        }
+      }
+    }
+
+    .mat-radio-ripple {
+      left: calc(50% - 16px);
+      top: calc(50% - 16px);
+      @include size(32px);
+      border-radius: 50%;
+    }
+
+    .mat-radio-label-content {
+      padding-left: 0.5rem;
+      @include font(14px, 20px, normal, $angular-grey-secondary);
+    }
+
+    &+.mat-radio-button {
+      margin-left: 0;
+    }
+  }
+}

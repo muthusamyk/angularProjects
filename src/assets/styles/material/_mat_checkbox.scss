@@ -1,0 +1,66 @@
+@import '../includes';
+
+/* Material Checkbox style overwrite here */
+
+.mat-checkbox {
+  .mat-checkbox-frame {
+    border-width: 1px;
+    @include border-radius(1px);
+  }
+
+  .mat-checkbox-label {
+    @include font(14px, 20px, normal, $angular-grey-secondary);
+  }
+
+  .mat-checkbox-layout {
+    margin: 0;
+  }
+
+  &.border-checkbox {
+
+    &.mat-checkbox-checked,
+    &.mat-checkbox-indeterminate {
+      &.mat-primary .mat-checkbox-background {
+        background-color: transparent;
+      }
+
+      &.mat-primary .mat-checkbox-frame {
+        border-color: $angular-primary-color;
+      }
+
+      &.mat-primary .mat-checkbox-checkmark-path {
+        stroke: $angular-primary-color !important;
+      }
+    }
+
+    &.mat-checkbox-checked,
+    &.mat-checkbox-indeterminate {
+      &.mat-accent .mat-checkbox-background {
+        background-color: transparent;
+      }
+
+      &.mat-accent .mat-checkbox-frame {
+        border-color: $angular-secondary-color;
+      }
+
+      &.mat-accent .mat-checkbox-checkmark-path {
+        stroke: $angular-secondary-color !important;
+      }
+    }
+
+    &.mat-checkbox-checked,
+    &.mat-checkbox-indeterminate {
+      &.mat-warn .mat-checkbox-background {
+        background-color: transparent;
+      }
+
+      &.mat-warn .mat-checkbox-frame {
+        border-color: $angular-red-color;
+      }
+
+      &.mat-warn .mat-checkbox-checkmark-path {
+        stroke: $angular-red-color !important;
+      }
+    }
+  }
+}

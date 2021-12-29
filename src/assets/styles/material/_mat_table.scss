@@ -1,0 +1,49 @@
+@import "../includes";
+
+/* Material Table style overwrite here */
+
+.mat-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    th {
+      @include font(13px, 16px, 500, $angular-grey-secondary);
+      background-color: #f4f5f9;
+    }
+
+    td {
+      @include font(13px, 16px, normal, $angular-grey-secondary);
+
+      &.mat-cell:first-of-type {
+        border-left: 1px solid map-get($angular-grey, 500);
+      }
+
+      &.mat-cell:last-of-type {
+        border-right: 1px solid map-get($angular-grey, 500);
+      }
+    }
+
+    &.mat-header-row {
+      border: 1px solid map-get($angular-grey, 500);
+      height: 48px;
+
+      .mat-header-cell {
+        border: none;
+      }
+    }
+
+    &.mat-row {
+      height: 42px !important;
+      background-color: $angular-white-primary;
+
+      .mat-cell {
+        border-bottom-color: map-get($angular-grey, 500);
+      }
+
+      &:hover {
+        background-color: #f2f6f9;
+      }
+    }
+  }
+}

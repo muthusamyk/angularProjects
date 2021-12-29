@@ -1,0 +1,289 @@
+<div class="document-container">
+  <div class="title m-t-32">Button</div>
+  <div class="heading">Basic Button</div>
+  <section>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+  <div class="heading">Raised Button</div>
+  <section>
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+  <div class="heading">Stroked Button</div>
+  <section>
+    <div class="example-button-row">
+      <button mat-stroked-button>Basic</button>
+      <button mat-stroked-button color="primary">Primary</button>
+      <button mat-stroked-button color="accent">Accent</button>
+      <button mat-stroked-button color="warn">Warn</button>
+      <button mat-stroked-button disabled>Disabled</button>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+  <div class="heading">Flat Button</div>
+  <section>
+    <div class="example-button-row">
+      <button mat-flat-button>Basic</button>
+      <button mat-flat-button color="primary">Primary</button>
+      <button mat-flat-button color="accent">Accent</button>
+      <button mat-flat-button color="warn">Warn</button>
+      <button mat-flat-button disabled>Disabled</button>
+      <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+  <div class="heading">Icon Button</div>
+  <section>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="heading">FAB Button</div>
+  <section>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+            <mat-icon>bookmark</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab disabled aria-label="Example icon button with a heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="heading">Mini FAB Button</div>
+  <section>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+            <mat-icon>plus_one</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+            <mat-icon>filter_list</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Checkbox</div>
+  <div class="heading">Checkbox with background</div>
+  <div>
+    <mat-checkbox color="primary">primary checkbox</mat-checkbox>
+  </div>
+  <div>
+    <mat-checkbox color="accent">accent checkbox</mat-checkbox>
+  </div>
+  <div>
+    <mat-checkbox color="warn">warn checkbox</mat-checkbox>
+  </div>
+  <div class="heading">Checkbox with border</div>
+  <div>
+    <mat-checkbox class="border-checkbox" color="primary">primary checkbox</mat-checkbox>
+  </div>
+  <div>
+    <mat-checkbox class="border-checkbox" color="accent">accent checkbox</mat-checkbox>
+  </div>
+  <div>
+    <mat-checkbox class="border-checkbox" color="warn">warn checkbox</mat-checkbox>
+  </div>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">ChipList</div>
+  <div class="heading">ChipList with Normal Background</div>
+  <mat-chip-list aria-label="chip selection">
+    <mat-chip>Basic chip</mat-chip>
+    <mat-chip color="primary" selected>Primary chip</mat-chip>
+    <mat-chip color="accent" selected>Accent chip</mat-chip>
+    <mat-chip color="primary" selected>Primary chip <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+    <mat-chip color="accent" selected>Accent chip <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+  <div class="heading">ChipList with Light Background</div>
+  <mat-chip-list class="light-bg-chip" aria-label="chip selection">
+    <mat-chip color="basic">Basic chip</mat-chip>
+    <mat-chip color="primary" selected>Primary chip</mat-chip>
+    <mat-chip color="accent" selected>Accent chip</mat-chip>
+    <mat-chip color="basic" selected>Basic chip <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+    <mat-chip color="primary" selected>Primary chip <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+    <mat-chip color="accent" selected>Accent chip <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Divider</div>
+  <mat-divider></mat-divider>
+</div>
+
+<div class="document-container">
+  <div class="title">Input</div>
+
+  <div class="heading">Full Border Input</div>
+  <label class="form-label">Enter your name</label>
+  <mat-form-field appearance="outline" class="full-width" floatLabel="never">
+    <input matInput placeholder="Enter your name here" name="username" #username="ngModel"
+      [(ngModel)]="loginDetails.username" required>
+    <mat-error *ngIf="username.hasError('required')">required</mat-error>
+  </mat-form-field>
+
+  <div class="heading">Standard Input</div>
+  <mat-form-field appearance="standard" class="full-width">
+    <mat-label>Standard form field</mat-label>
+    <input matInput placeholder="Enter your name here">
+  </mat-form-field>
+
+  <div class="heading">Fill Input</div>
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Fill form field</mat-label>
+    <input matInput placeholder="Enter your name here">
+  </mat-form-field>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Progress Bar</div>
+  <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Progress Spinner</div>
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">RadioGroup</div>
+  <mat-radio-group color="primary">
+    <mat-radio-button value="after">After</mat-radio-button>
+    <mat-radio-button value="before">Before</mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32">Select</div>
+  <div class="heading">Full Border Select</div>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-select placeholder="Placeholder" [(ngModel)]="matSelectGeneric" required>
+      <mat-option [value]="1">Patrick</mat-option>
+      <mat-option [value]="2">Ricardo</mat-option>
+      <mat-option [value]="3">Patricardo</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">SlideToggle</div>
+  <mat-slide-toggle color="primary">Slide me!</mat-slide-toggle>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Slider</div>
+  <mat-slider color="primary" aria-label="unit(s)"></mat-slider>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Table</div>
+  <table mat-table [dataSource]="dataSource">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+<div class="document-container">
+  <div class="title m-t-32 m-b-8">Tabs</div>
+  <mat-tab-group>
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+</div>

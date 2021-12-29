@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Mixins
+    - Border Radius Properties here
+   ========================================================================== */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* ==========================================================================
+     Mixins
+      - Font Properties here
+     ========================================================================== */
+
+@mixin font($size, $lineHeight, $weight, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  color: $color;
+}
+
+/* ==========================================================================
+     Mixins
+      - Images Sizing Properties here
+     ========================================================================== */
+@mixin sizing($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+/* ==========================================================================
+   Mixins
+    - Icon Properties here
+   ========================================================================== */
+@mixin icon($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+/* ==========================================================================
+   Mixins
+    - Positioning Properties here
+   ========================================================================== */
+
+@mixin positionFull($position, $value) {
+  position: $position;
+  top: $value;
+  bottom: $value;
+  left: $value;
+  right: $value;
+}
+
+@mixin positionTopLeft($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}

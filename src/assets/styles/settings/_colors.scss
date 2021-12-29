@@ -1,0 +1,75 @@
+/*===============================
+  Angular UI Docs Brand Colors
+---------------------------------*/
+$angular-primary: (
+    50: #FB7000,
+    100: #FD8526,
+    200: #FCA259,
+    300: #FDBE8C,
+    400: #FEDBBF,
+    500: #FFEAD9,
+    600: #FEF0E5,
+    700: #FFF8F2
+);
+
+$angular-secondary: (
+    50: #005592,
+    100: #266EA2,
+    200: #5990B8,
+    300: #8CB2CE,
+    400: #BFD4E4,
+    500: #D9E6EF,
+    600: #E5EEF4,
+    700: #F2F6F9
+);
+
+$angular-grey: (
+    50: #202A36,
+    100: #414A54,
+    200: #6E747C,
+    300: #9A9FA4,
+    400: #C7CACD,
+    500: #DFE3EB,
+    600: #E8E9EA,
+    700: #F4F4F5
+);
+
+$angular-white: (
+    50: #FFFFFF
+);
+
+$angular-red: (
+    50: #F23E3E,
+    100: #FB5B5B,
+    200: #FEEBEB
+);
+
+$angular-warning: (
+    50: #FFBB33,
+    100: #E5EEF4
+);
+
+$angular-success: (
+    50: #00C851,
+    100: #26D06B
+);
+
+$angular-link: (
+    50: #0E7EBF,
+    100: #3291C8
+);
+
+$angular-primary-color: map-get($angular-primary, 50);
+$angular-secondary-color: map-get($angular-secondary, 50);
+
+$angular-white-primary: map-get($angular-white, 50);
+
+$angular-grey-primary: map-get($angular-grey, 50);
+$angular-grey-secondary: map-get($angular-grey, 100);
+$angular-grey-tertiary: map-get($angular-grey, 200);
+$angular-grey-hint: map-get($angular-grey, 300);
+
+$angular-red-color: map-get($angular-red, 50);
+$angular-green-color: map-get($angular-success, 50);
+$angular-warning-color: map-get($angular-warning, 50);
+$angular-link-color: map-get($angular-link, 50);

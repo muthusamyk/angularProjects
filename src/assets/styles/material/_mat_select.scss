@@ -1,0 +1,21 @@
+@import '../includes';
+
+/* Mat form field Select box style overwrite here */
+
+mat-form-field.mat-form-field-type-mat-select {
+  .mat-select {
+    .mat-select-placeholder {
+      @include font(14px, 20px, 400, $angular-grey-hint);
+      letter-spacing: normal;
+    }
+
+    .mat-select-value {
+      @include font(14px, 20px, 500, $angular-grey-primary);
+      letter-spacing: normal;
+    }
+
+    .mat-select-arrow-wrapper {
+      transform: unset;
+    }
+  }
+}
