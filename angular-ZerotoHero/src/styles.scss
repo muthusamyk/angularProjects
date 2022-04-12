@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h5 {
+  /*  for font size 24px */
+  font-size: 2.4rem;
+}
+
+ul {
+    font-size: 1.6rem;
+}
+
+p {
+  /*  for font size 14px */
+  font-size: 1.4rem;
+}
