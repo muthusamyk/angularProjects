@@ -59,9 +59,14 @@ mat-form-field.mat-form-field {
         @include font(12px, 16px, 400, $angular-red-color);
         letter-spacing: normal;
         padding: 0;
-        margin: 0.25rem 0 0 0;
+        margin: 0;
         top: 0;
         position: relative;
+
+        .mat-error {
+          color: $angular-red-color;
+          margin: 4px 0 0 0;
+        }
       }
     }
 
@@ -71,8 +76,23 @@ mat-form-field.mat-form-field {
       }
     }
 
-    &.mat-form-field-invalid .mat-form-field-flex .mat-form-field-outline {
-      color: $angular-red-color;
+    &.mat-form-field-invalid .mat-form-field-flex {
+      background-color: map-get($angular-red, 200);
+      .mat-form-field-outline {
+        color: $angular-red-color;
+      }
+
+      /* If Mat error field status with Icon */
+      &::after {
+        color: $angular-red-color;
+        content: "error";
+        font-family: Material Icons;
+        font-feature-settings: "liga";
+        font-size: 24px;
+        padding-right: 8px;
+        top: 5px;
+        position: relative;
+      }
     }
   }
 
