@@ -1,0 +1,4 @@
+<h1>items lists</h1>
+<div class="d-flex">
+    <p *ngFor="let item of childItems" (click)="itemClicked(item)">{{item.name}}</p>
+</div>

@@ -102,7 +102,7 @@
 
   <div>
     <h2>Directives</h2>
-    <div class="d-flex">
+    <div class="d-flex directive">
       <div>
         <button (click)="clickedNumber(2)" [class.active]="selctedNumber === 2">Numbers divided by 2</button>
         <button (click)="clickedNumber(3)" [class.active]="selctedNumber === 3">Numbers divided by 3</button>
@@ -111,11 +111,9 @@
         <button [disabled]="buttonDisabled" (click)="clear()">Clear</button>
       </div>
       <div class="numbers-list">
-        <p *ngFor="let number of numbers; let i = index"
-          [ngClass]="{
+        <p *ngFor="let number of numbers; let i = index" [ngClass]="{
             'active': (i + 1) % selctedNumber === 0
-          }"
-        >{{i+1}}</p>
+          }">{{i+1}}</p>
       </div>
     </div>
     <div [ngSwitch]="selctedNumber">
@@ -124,6 +122,55 @@
       <p *ngSwitchCase="5">Numbers highlighted above are divisible by 5</p>
       <p *ngSwitchCase="10">Numbers highlighted above are divisible by 10</p>
     </div>
+  </div>
+
+  <div>
+    <h2>Input && Output</h2>
+    <div class="d-flex">
+      <div class="input-btn">
+        <button (click)="colors()">Colors</button>
+        <button (click)="fruits()">Fruits</button>
+        <button (click)="animals()">Animals</button>
+        <p *ngIf="selectedItems">{{ selectedItems.name}}</p>
+      </div>
+      <div class="flex-1">
+        <app-child [childItems]="finalItems" (sendItemDetails)="receiveItemDetails($event)"></app-child>
+      </div>
+    </div>
+  </div>
+
+  <h2>Services</h2>
+  <ul>
+    <li>Typescript class used for sharing data or functionality.</li>
+    <li>No need to specify any decorator for services. like ex:: @Component @NgModule</li>
+    <li>Need to provide the service either component or in the module</li>
+    <ul>
+      <li>When we include into the <b>Component</b> then this component and the child component get the same instance of
+        that sevice</li>
+      <li>When we include into the root <b>Module</b> then the entire appln will have one instance of that sevice</li>
+    </ul>
+    <li>Services can be injected into another services... But inthat case its necessary to add @injectable decorator in
+      the service to receiving the other service</li>
+    <li>newer version of angular suggested to add @injectable decorator to all the services...</li>
+    <li>uses of services</li>
+    <ul>
+      <li>code reuse</li>
+      <li>Communication b/w Components</li>
+    </ul>
+  </ul>
+  <app-first></app-first>
+  <app-second></app-second>
+
+  <h2>Template Ref Variable</h2>
+  <ul>
+    <li>Its also known as local ref variable It can be added into any element in Dom</li>
+    <li>Template ref can be used in html template inoreder to use it in typescriptwe need to be passed explicitly in typescript component</li>
+    <li>Access to the Dom before we trigger an event in HTML we need to use @ViewChild</li>
+  </ul>
+  <input type="text" #myInput ngModel/>
+  <button [disabled]="myInput.value.length === 0">muthu</button>
+  <div *ngIf="myInput.value.length">
+    <p><b>Results</b>: No.of Characters {{myInput.value.length}}</p>
   </div>
 </div>
 

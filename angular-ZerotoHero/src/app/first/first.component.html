@@ -1,0 +1,20 @@
+<p> First Component </p>
+<div class="d-flex">
+    <select name="shapes" [(ngModel)]="shape">
+        <option value="">Select Shape</option>
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="circle">Circle</option>
+    </select>
+    
+    <select name="colors" [(ngModel)]="color">
+        <option value="">Select Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+
+    <button (click)="draw()" [disabled]="shape.length === 0 || color.length === 0">Draw</button>
+</div>
+
+<div class="shape {{shapeClass}}"></div>
